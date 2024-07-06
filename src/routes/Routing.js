@@ -248,7 +248,7 @@ const Routing = () => {
             path="history"
             element={
               <Public>
-                <History />
+                <History EXOR_Balance={EXOR_Balance}/>
               </Public>
             }
           />

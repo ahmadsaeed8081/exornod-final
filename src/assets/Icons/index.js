@@ -2,6 +2,9 @@ export { default as UserIcon } from "./UserIcon";
 export { default as MenuIcon } from "./MenuIcon";
 export { default as ArrowDownIcon } from "./ArrowDownIcon";
 export { default as ArrowRightIcon } from "./ArrowRightIcon";
+export { default as ArrowDownIcon_swap } from "./ArrowDownIcon_swap";
+export { default as UpArrowIcon } from "./UpArrowIcon";
+
 export { default as CheckIcon } from "./CheckIcon";
 export { default as InstagramIcon } from "./InstagramIcon";
 export { default as FacebookIcon } from "./FacebookIcon";

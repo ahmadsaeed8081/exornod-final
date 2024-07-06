@@ -45,10 +45,10 @@ const DashboardSidebar = () => {
       link: "/dashboard/referral-earning",
     },
     { 
-      title: "Nod",
+      title: "SWAP",
       icon: <ProfileIcon />,
-      status: "Coming Soon",
-      link: "#" 
+      status:"",
+      link: "/dashboard/History" 
       
     },
     {
