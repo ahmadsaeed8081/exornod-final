@@ -149,7 +149,7 @@ function swap()
       
       if(Number(props.EXOR_Balance)< Number(Convert_To_Wei(send_token_amount)))
       {
-        alert("You don't have enough PPKT");
+        alert("You don't have enough EXOR");
         return;
       }
 
