@@ -4,7 +4,7 @@ export const Swap_cont_address="0x3d6727BBD0B067d9fD4BE9565f6a8d4Cf00454e4";
 
 export const USDT_Address="0xc2132D05D31c914a87C6611C10748AEb04B58e8F";
 export const DAI_Address="0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063";
-export const EXOR_Address="0x295625d518bF6bb3654b5cC2E226f55Fe78e2e93";
+export const EXOR_Address="0x487Aaa0C723f5EF2148B56E41b096e02654Cff75";
 export const EXOR_v2_Address="0x487Aaa0C723f5EF2148B56E41b096e02654Cff75";
 
 
