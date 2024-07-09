@@ -5,7 +5,7 @@ import Timer from "../../../components/Timer";
 
 import {useNetwork,  useSwitchNetwork } from 'wagmi'
 import { useAccount, useDisconnect } from 'wagmi'
-import { cont_address,USDT_Address,DAI_Address,EXOR_Address,NOD_Address,token_abi,NFT_abi,cont_abi } from "../../../components/config";
+import { cont_address,USDT_Address,DAI_Address,EXOR_v2_Address,NOD_Address,token_abi,NFT_abi,cont_abi } from "../../../components/config";
 import { useContractReads,useContractRead ,useContractWrite, usePrepareContractWrite, useWaitForTransaction } from 'wagmi'
 import Web3 from "web3";
 import Loader from "../../../components/Loader";
@@ -73,7 +73,7 @@ const ProofBurn = (props) => {
 
     const { config:EXOR_Config  } = usePrepareContractWrite({
     
-      address: EXOR_Address,
+      address: EXOR_v2_Address,
       abi: token_abi,
       functionName: 'approve',
       args: [cont_address,Convert_To_wei(burnAmount)],
