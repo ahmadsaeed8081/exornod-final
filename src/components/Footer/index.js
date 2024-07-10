@@ -106,6 +106,9 @@ const Footer = () => {
                   </div>
                   contact@exornod.io
                 </div>
+                <div className="flex items-center gap-2 text-white font-light text-sm">
+                  0x487Aaa0C723f5EF2148B56E41b096e02654Cff75
+                </div>
                 {/* <div className="flex items-center gap-2 text-white font-light text-sm">
                   <div className="flex items-center justify-center h-4 w-4">
                     <LocationIcon />
