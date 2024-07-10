@@ -183,7 +183,7 @@ const ProofBurn = (props) => {
     }
 
 
-    if(Number(props.EXOR_Balance)/10**18 < Number(burnAmount))
+    if(Number(props.EXOR_v1_Balance)/10**18 < Number(burnAmount))
     {
       alert("You don't have sufficient balance");
       return;
@@ -298,7 +298,7 @@ const ProofBurn = (props) => {
                           Minimum : {Number(props.minburn)} 
                         </h1>
                         <h1 className="text-white font-light text-sm">
-                          Balance: {(Number(props.EXOR_Balance)/10**18).toFixed(2)} EXOR
+                          Balance: {(Number(props.EXOR_v1_Balance)/10**18).toFixed(2)} EXOR
                         </h1>
                       </div>
                       <div className="flex items-center p-2 rounded-lg border border-themeColor">
@@ -308,12 +308,12 @@ const ProofBurn = (props) => {
                           min={0}
                           value={burnAmount}
                           placeholder="write amount"
-                          max={Number(props.EXOR_Balance)>0?(Number(props.EXOR_Balance)/10**18).toFixed(2):0}
+                          max={Number(props.EXOR_v1_Balance)>0?(Number(props.EXOR_v1_Balance)/10**18).toFixed(2):0}
                           onChange={(e)=>{setburndAmount(e.target.value); check_APY(e.target.value);find_expectedReturn(e.target.value)}}
                         />
                         <div className="flex items-center justify-center text-white font-light text-xs gap-1">
                           Exor{" "}
-                          <div className="bg-themeColor text-black text-xs p-1 rounded-md font-light" onClick={(e)=>setburndAmount((Number(props.EXOR_Balance)/10**18).toFixed(2))}>
+                          <div className="bg-themeColor text-black text-xs p-1 rounded-md font-light" onClick={(e)=>setburndAmount((Number(props.EXOR_v1_Balance)/10**18).toFixed(2))}>
                             Max
                           </div>
                         </div>

@@ -23,7 +23,7 @@ import Web3 from "web3";
 
 import {useNetwork,  useSwitchNetwork } from 'wagmi'
 import { useAccount, useDisconnect } from 'wagmi'
-import { cont_address,USDT_Address,DAI_Address,EXOR_Address,NOD_Address,token_abi,NFT_abi,cont_abi } from "../components/config";
+import { cont_address,USDT_Address,DAI_Address,EXOR_Address,EXOR_v2_Address,NOD_Address,token_abi,NFT_abi,cont_abi } from "../components/config";
 
 
 const Routing = () => {
@@ -36,6 +36,8 @@ const Routing = () => {
   const [USDT_Balance, set_USDTBalance] = useState(0);
   const [DAI_Balance, set_DAIBalance] = useState(0);
   const [EXOR_Balance, set_EXORBalance] = useState(0);
+  const [EXOR_v1_Balance, set_EXOR_v1_Balance] = useState(0);
+
   const [MATIC_Balance, set_MaticBalance] = useState(0);
 
 
@@ -118,11 +120,13 @@ const Routing = () => {
     let USDT_token=new web3.eth.Contract(token_abi,USDT_Address);
     let DAI_token=new web3.eth.Contract(token_abi,DAI_Address);
     let EXOR_token=new web3.eth.Contract(token_abi,EXOR_Address);
+    let EXORv1_token=new web3.eth.Contract(token_abi,EXOR_v2_Address);
 
     //Tokens Data
     let USDT_Balance = await USDT_token.methods.balanceOf(address).call();    
     let DAI_Balance = await DAI_token.methods.balanceOf(address).call();    
     let EXOR_Balance = await EXOR_token.methods.balanceOf(address).call();    
+    let EXOR_v1_Balance = await EXORv1_token.methods.balanceOf(address).call();    
 
     //NFT Data
 
@@ -165,6 +169,7 @@ const Routing = () => {
     set_USDTBalance(USDT_Balance)
     set_DAIBalance(DAI_Balance)
     set_EXORBalance(EXOR_Balance)
+    set_EXOR_v1_Balance(EXOR_v1_Balance)
     set_MaticBalance(balance)
     set_nod_bal(nod_bal)
 
@@ -265,7 +270,7 @@ const Routing = () => {
             path="proof-burn"
             element={
               <Public>
-                <ProofBurn is_eligible={is_eligible} loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
+                <ProofBurn EXOR_v1_Balance={EXOR_v1_Balance} is_eligible={is_eligible} loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
               </Public>
             }
           />
