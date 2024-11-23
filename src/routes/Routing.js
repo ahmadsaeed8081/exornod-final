@@ -262,7 +262,7 @@ const Routing = () => {
             path="token"
             element={
               <Public>
-                <PurchaseToken exorPrice={exorPrice} owner={owner} referral={referral} loader={loader} test={test} PerNodePrice_MATIC={PerNodePrice_MATIC} USDT_Balance={USDT_Balance} DAI_Balance={DAI_Balance} EXOR_Balance={EXOR_Balance} MATIC_Balance={MATIC_Balance} PerNodePrice={PerNodePrice} nod_bal={nod_bal} totalNods={totalNods} totalNodsold={totalNodsold}/>
+                <PurchaseToken exorPrice={exorPrice} owner={owner} referral={referral} loader={loader} test={test} PerNodePrice_MATIC={PerNodePrice_MATIC} USDT_Balance={USDT_Balance} DAI_Balance={DAI_Balance} EXOR_Balance={EXOR_v1_Balance} MATIC_Balance={MATIC_Balance} PerNodePrice={PerNodePrice} nod_bal={nod_bal} totalNods={totalNods} totalNodsold={totalNodsold}/>
               </Public>
             }
           />
