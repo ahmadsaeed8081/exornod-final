@@ -166,11 +166,11 @@ const ProofBurn = (props) => {
       alert("kindly connect your wallet");
       return;
     }
-    if(!props.is_eligible)
-    {
-      alert("To Earn Burn Reward, You have to buy NOD NFT or activate your Referral link ");
-      return;
-    }
+    // if(!props.is_eligible)
+    // {
+    //   alert("To Earn Burn Reward, You have to buy NOD NFT or activate your Referral link ");
+    //   return;
+    // }
     if(burnAmount==0 )
     {
       alert("kindly write amount to burn ");
