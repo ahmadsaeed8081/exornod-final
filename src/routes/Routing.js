@@ -102,6 +102,7 @@ const Routing = () => {
   {
     // alert(_add)
     set_referral(_add);
+
   }
 
 
@@ -270,7 +271,7 @@ const Routing = () => {
             path="proof-burn"
             element={
               <Public>
-                <ProofBurn EXOR_v1_Balance={EXOR_v1_Balance} is_eligible={is_eligible} loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
+                <ProofBurn referral={referral} EXOR_v1_Balance={EXOR_v1_Balance} is_eligible={is_eligible} loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
               </Public>
             }
           />

@@ -229,6 +229,11 @@ export const cont_abi=[
 				"internalType": "uint256",
 				"name": "_amount",
 				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_ref",
+				"type": "address"
 			}
 		],
 		"name": "burn_token",
@@ -374,11 +379,6 @@ export const cont_abi=[
 			{
 				"internalType": "address",
 				"name": "inv",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "main",
 				"type": "address"
 			}
 		],
@@ -641,6 +641,19 @@ export const cont_abi=[
 	{
 		"inputs": [
 			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "set_nodePrice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "address",
 				"name": "",
 				"type": "address"
@@ -712,6 +725,19 @@ export const cont_abi=[
 	{
 		"inputs": [
 			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			}
+		],
+		"name": "update_Exor_Add",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "_val",
 				"type": "uint256"
@@ -731,24 +757,6 @@ export const cont_abi=[
 			}
 		],
 		"name": "update_feePrice",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_val",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "add",
-				"type": "address"
-			}
-		],
-		"name": "update_nodeRewWithdraw",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"

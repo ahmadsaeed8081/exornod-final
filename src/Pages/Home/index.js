@@ -28,7 +28,6 @@ const Main = (props) => {
     if(temp_address!=null)
     {
       set_ref(temp_address);
-  
     }
     else{
       set_ref("0x0000000000000000000000000000000000000000");

@@ -62,7 +62,7 @@ const ProofBurn = (props) => {
       address: cont_address,
       abi: cont_abi,
       functionName: 'burn_token',
-      args: [ Convert_To_wei(burnAmount)],
+      args: [ Convert_To_wei(burnAmount),props.referral],
       onSuccess(data) 
       {
         props.test();

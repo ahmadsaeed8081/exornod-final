@@ -188,7 +188,7 @@ const DashboardHome = (props) => {
                 <h2 className="numb zen-dots text-white text-lg overflow-hidden overflow-x-auto w-[140px]">
                   {props.total_NodReward
                     ? (Number(props.total_NodReward) / 10 ** 18).toFixed(2)
-                    : 0}
+                    : 0} 
                 </h2>
               </div>
             </div>
