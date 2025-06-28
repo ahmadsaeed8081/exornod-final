@@ -152,17 +152,22 @@ const Routing = () => {
 
     let user_NodRew = await contract.methods.get_userRew(address).call(); 
     let user = await contract.methods.user(address).call();    
-    // console.log(user)
     let TotalBurnReward = await contract.methods.getTotalBurnReward(address).call();    
+    console.log("user1")
+
     let RefLevel_earning = await contract.methods.RefLevel_earning(address).call();    
+    console.log("user11")
+
     let RefLevel_count = await contract.methods.Level_count(address).call();    
     // let PerNodRew = await contract.methods.get_nodeRew("1").call();    
     let CurrBalance = await contract.methods.get_availableBalance(address).call();
 
     let totalEarning= await contract.methods.get_totalEarning(address).call();   
+    console.log("user134")
 
     let AllBurns = await contract.methods.getAll_burns().call({ from: address });  
     
+    console.log("user1343")
 
     // let history = await contract.methods.get_history(address).call({ from: address });
 

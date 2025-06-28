@@ -513,19 +513,19 @@ function set_TotalPrice(num)
                     <div className="flex items-center justify-center h-8 w-8">
                       <DaiIcon />
                     </div>
-                    <h4 className="zen-dots text-lg line-through text-white font-medium">
+                    {/* <h4 className="zen-dots text-lg line-through text-white font-medium">
                     {withoutdiscount_Amount} 
-                    </h4>
+                    </h4> */}
                     <h4 className="zen-dots text-lg text-white font-medium">
                     {totalAmount}
                     </h4>
                   </div>
-                  <div className="flex flex-col gap-2 p-8">
+                  {/* <div className="flex flex-col gap-2 p-8">
                  
                  <button className="btn bg-themeColor mt-6 zen-dots text-black font-medium text-lg">
                    40% off
                  </button>
-               </div>
+               </div> */}
                 </div>
                 <div className="flex w-full border-b border-[#343434]"></div>
                 <div className="flex flex-col gap-5 w-full p-5">
