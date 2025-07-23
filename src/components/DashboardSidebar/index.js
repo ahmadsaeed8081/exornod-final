@@ -52,10 +52,10 @@ const DashboardSidebar = () => {
       
     },
     {
-      title: "My Nod",
-      icon: <ProfileIcon2 />,
-      status: "Coming Soon",
-      link: "#",
+      title: "Passive Income",
+      icon: <StakeIcon />,
+      status: "",
+      link: "https://passiveincome.exornod.io/" , target:"_blank",
     },
     { title: "Shop",
      icon: <ShopIcon />,
@@ -65,7 +65,7 @@ const DashboardSidebar = () => {
 
     {
       title: "Proof Of Stake",
-      icon: <StakeIcon />,
+      icon: <ShopIcon />,
       status: "Coming Soon",
       link: "#",
     },
